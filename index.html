@@ -18,6 +18,45 @@
         <div class="container">
             <h1 class="title">Rock Paper Scissors</h1>
 
+            <div class="help">
+                <h2>Help</h2>
+                <p>Click on one of the items below to use to vs your opponent.</p>
+            </div>
+            <div class="main">
+                <div class="graphics">
+                    <span>
+                        <div class="player-name">
+                            <h3 id="my-score">You</h3>
+                        </div>
+                        <div class="selected-result">
+                            <img id="myItemImg" src="./assets/images/rock.png" alt="my option">
+                        </div>
+                    </span>
+                    <span>
+                        <h2>VS</h2>
+                    </span>
+                    <span>
+                        <div class="player-name">
+                            <h3 id="bot-score">Computer</h3>
+                        </div>
+                        <div class="selected-result">
+                            <img id = "botItemImg" src="./assets/images/rock.png"  alt="bot's item">
+                        </div>
+                    </span>
+                </div>
+                <div class="interactions">
+                    <button onclick="doRps(1)"><img src="./assets/images/rock.png" alt="rock"></button>
+                    <button onclick="doRps(2)"><img src="./assets/images/paper.png" alt="paper"></button>
+                    <button onclick="doRps(3)"><img src="./assets/images/scissor.png" alt="scissor"></button>
+                </div>
+
+                <div class="message">
+                    <p id="message-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="assets/js/script.js"></script>
 </body>
