@@ -26,3 +26,45 @@ body {
     text-align: center;
     opacity: 80%;
 }
+
+.help {
+    width: 40%;
+    background-color: cyan;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+    text-align: center;
+    border-left: 4px solid blueviolet;
+    color: black;
+}
+
+.main {
+    width: 90%;
+    margin-top: 3rem;
+}
+
+.main span {
+    width: 350px;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.main .graphics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main .interactions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: rgb(30, 30, 30);
+    width: fit-content;
+    border-radius: 18px;
+    border-top: 2px solid rgb(10, 10, 10);
+    padding: 10px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
