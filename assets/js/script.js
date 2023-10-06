@@ -26,3 +26,37 @@ class Player {
         this.streak = 0;
     }
 }
+
+class Game {
+    constructor(message, winningOpponentName, highestStreak) {
+        this.message = message;
+        this.winningOpponentName = winningOpponentName;
+        this.highestStreak = highestStreak;
+    }
+    
+    getMessage() {
+        return this.message;
+    }
+
+    getWinningOpponentName() {
+        return this.winningOpponentName;
+    }
+
+    getHighestStreak() {
+        return this.highestStreak;
+    }
+
+    setMessage(newMessage) {
+        this.message = newMessage;
+    }
+
+    setWinningOpponentName(opponentName) {
+        this.winningOpponentName = opponentName;
+    }
+
+    setHighestStreak(num) {
+        this.highestStreak = num;
+    }
+
+
+}
