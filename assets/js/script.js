@@ -33,7 +33,7 @@ class Game {
         this.winningOpponentName = winningOpponentName;
         this.highestStreak = highestStreak;
     }
-    
+
     getMessage() {
         return this.message;
     }
@@ -57,6 +57,52 @@ class Game {
     setHighestStreak(num) {
         this.highestStreak = num;
     }
-
-
 }
+
+const Items = {
+    "Rock": 1,
+    "Paper": 2,
+    "Scissor": 3
+}
+
+const humanPlayer = new Player(1, "You", 0, 0);
+const botPlayer = new Player(2, "Computer", 0, 0);
+const game = new Game("", "", "");
+
+function doRps(myItemId) {
+
+    const botChosenItemId = Math.floor(Math.random() * Object.keys(Items).length) + 1;
+    const myItemImg = document.getElementById("myItemImg");
+    const botItemImg = document.getElementById("botItemImg");
+    const myScore = document.getElementById("my-score");
+    const botScore = document.getElementById("bot-score");
+
+    const messageContent = document.getElementById("message-content");
+
+    if (myItemId === Items.Rock) {
+
+        myItemImg.src = "./assets/images/rock.png";
+
+        if (botChosenItemId === Items.Rock) {
+            botItemImg.src = "./assets/images/rock.png";
+            game.setMessage("It's a draw");
+        }
+
+        if (botChosenItemId === Items.Paper) {
+            botItemImg.src = "./assets/images/paper.png";
+            humanPlayer.resetStreak();
+            botPlayer.incrementScore();
+            botPlayer.incrementStreak();
+            game.setHighestStreak(botPlayer.getStreak());
+            game.setMessage("Bot won");
+        }
+
+        if (botChosenItemId === Items.Scissor) {
+            botItemImg.src = "./assets/images/scissor.png";
+            botPlayer.resetStreak();
+            humanPlayer.incrementScore();
+            humanPlayer.incrementStreak();
+            game.setHighestStreak(humanPlayer.getStreak());
+            game.setMessage("You won");
+        }
+    }
