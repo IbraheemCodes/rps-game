@@ -12,6 +12,10 @@ In the light blue section i have written a very brief Help guide to inform the u
 Furthermore,In this page i have made it very easy for the user to understand and be able to play the game. The text is not too small nor too big and it even determines who is the winner once the user has chosen its option whether it is Rock, Paper or scissors. It can say the following outcomes "you Won", "Bot Won" and "Its a Draw". It will say at the bottem.
 ![bot](assets/images/botwin.png)
 
+
+# JavaScript
+I have included alot of javaScript for the game to optimize correctly which has been tested many times to show the correct output, this is done through player class and a game class, each class has its own getter and setter methods to update the respected variables such as score,  streak, id and names more specifcally "user" meaning me and "bot" imlying computer. i have also created function named doRps which handles logic and user interface.
+
 # Testing
 All links have been tested and checked via the validator links for both the CSS ![CSS](assets/images/css.png) HTML ![HTML](assets/images/html.png).
 
