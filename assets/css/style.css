@@ -123,3 +123,44 @@ body {
 .main .message #message-content {
     text-align: center;
 }
+
+@media (max-width: 846px) {
+    .help {
+        width: 80%;
+    }
+    .main .graphics span {
+        width: 250px;
+    }
+}
+
+@media (max-width: 624px) {
+    .main .graphics {
+        display: flex;
+        gap: 6px;
+    }
+    .main .graphics span {
+        width: 95%;
+    }
+    .main .graphics >:nth-child(2) {
+        width: 95%;
+    }
+    .main .graphics >:nth-child(2) h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .main .interactions {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 6px;
+    }
+    .main .interactions button  {
+        width: 48px;
+        height: fit-content;
+    }
+
+    .main .interactions button img {
+        width: 28px;
+    }
+}
