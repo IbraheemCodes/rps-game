@@ -106,7 +106,7 @@ function doRps(myItemId) {
             game.setMessage("You won");
         }
     }
-}
+    
 if(myItemId === Items.Paper) {
     myItemImg.src = "./assets/images/paper.png";
 
@@ -165,4 +165,4 @@ myScore.textContent = "You (" + humanPlayer.getScore() + ")";
     botScore.textContent = "Computer (" + botPlayer.getScore() + ")";
 
     messageContent.textContent = game.getMessage() + " | streak: " + game.getHighestStreak();
-
+}
