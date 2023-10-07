@@ -43,7 +43,7 @@ body {
     margin-top: 3rem;
 }
 
-.main span {
+.main .box-holder {
     width: 350px;
     border: 1px solid rgb(100, 100, 100);
 }
@@ -128,7 +128,7 @@ body {
     .help {
         width: 80%;
     }
-    .main .graphics span {
+    .main .graphics div {
         width: 250px;
     }
 }
@@ -138,7 +138,7 @@ body {
         display: flex;
         gap: 6px;
     }
-    .main .graphics span {
+    .main .graphics div {
         width: 95%;
     }
     .main .graphics >:nth-child(2) {
