@@ -160,3 +160,9 @@ if(myItemId === Items.Scissor) {
         game.setMessage("You won");
     }
 }
+
+myScore.textContent = "You (" + humanPlayer.getScore() + ")";
+    botScore.textContent = "Computer (" + botPlayer.getScore() + ")";
+
+    messageContent.textContent = game.getMessage() + " | streak: " + game.getHighestStreak();
+
